@@ -1,0 +1,169 @@
+@import url("https://fastart.netlify.app/css/fastart.css");
+
+/* Utils */
+.App {
+  font-family: sans-serif;
+  padding: 1rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid--res {
+  max-width: 75rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  row-gap: 3rem;
+}
+
+/* Nav Style */
+.nav {
+  display: flex;
+  max-width: 75rem;
+  margin: 1rem auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--info-dark);
+  text-decoration: none;
+}
+
+/* Form CSS */
+.form--container {
+  position: relative;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 5px;
+  min-width: 15rem;
+  max-width: 75rem;
+  margin: 1rem auto;
+  box-shadow: 2px 3px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.form--container .icon--btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0.5rem;
+  top: 0.5rem;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+.form--container input[type="text"] {
+  width: 95%;
+
+  margin: 0.5rem auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+input[type="text"],
+textarea {
+  background-color: inherit;
+  font-family: inherit;
+  display: block;
+}
+
+.form--container textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 95%;
+  height: 5rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.form--container input[type="submit"] {
+  margin: 0.5rem;
+}
+
+/* Card Style */
+.card--title {
+  margin-right: 1rem;
+}
+
+.card--title,
+.card--description {
+  word-break: break-all;
+}
+
+.card.card--badge .pin--btn {
+  padding: 0.3rem 0.2rem;
+  background-color: inherit;
+}
+
+.pin {
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.pin--filled {
+  color: black;
+}
+
+.card--created {
+  font-size: 0.8rem;
+}
+
+.card textarea {
+  resize: none;
+  height: 5rem;
+  margin: 0.2rem 1.2rem;
+  width: 10.8rem;
+}
+
+.card .btn {
+  padding: 0.3rem 0.6rem;
+}
+
+.color--container {
+  padding: 0 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.8rem;
+}
+.card--btn--icons {
+  gap: 0;
+}
+
+.color--container button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.bg-green {
+  background-color: var(--success-light);
+}
+
+.bg-red {
+  background-color: var(--danger-light);
+}
+
+.bg-blue {
+  background-color: var(--info-light);
+}
+
+.bg-yellow {
+  background-color: var(--alert-light);
+}
