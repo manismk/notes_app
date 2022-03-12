@@ -1,7 +1,7 @@
 const Nav = () => {
   return (
     <div className="nav">
-      <h1>Notes App</h1>
+      <h1>Keep Notes</h1>
       <a
         className="nav-link"
         target="_blank"
