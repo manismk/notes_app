@@ -46,7 +46,6 @@ h2 {
   padding: 1rem;
   width: 50%;
   border-radius: 5px;
-  min-width: 15rem;
   max-width: 75rem;
   margin: 1rem auto;
   box-shadow: 2px 3px 10px 0px rgb(0 0 0 / 20%);
@@ -65,7 +64,6 @@ h2 {
 
 .form--container input[type="text"] {
   width: 95%;
-
   margin: 0.5rem auto;
   font-size: 1.2rem;
   font-weight: 600;
@@ -127,6 +125,10 @@ textarea {
   resize: none;
   height: 5rem;
   margin: 0.2rem 1.2rem;
+}
+
+.card input[type="text"],
+.card textarea {
   width: 10.8rem;
 }
 
@@ -166,4 +168,10 @@ textarea {
 
 .bg-yellow {
   background-color: var(--alert-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .form--container {
+    width: 85%;
+  }
 }
